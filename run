@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+require "pathname"
+require "fileutils"
+include FileUtils
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path("./", __dir__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+chdir APP_ROOT do
+
+  if system("which overmind > /dev/null")
+    puts "== STARTING UP =="
+    system! "overmind start -D -f Procfile"
+  else
+    puts "Please Install https://github.com/DarthSim/overmind"
+    # system! "foreman start -f Procfile --env=/dev/null"
+  end
+end

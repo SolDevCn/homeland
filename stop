@@ -1,0 +1,2 @@
+overmind  stop
+rm ./.overmind.sock
