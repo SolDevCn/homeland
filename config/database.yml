@@ -25,3 +25,7 @@ test:
 production:
   <<: *default
   database: homeland
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+  port: <%= ENV["DATABASE_PORT"] %>
+

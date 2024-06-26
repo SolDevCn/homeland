@@ -49,6 +49,7 @@ app.local.env
 yarn-debug.log*
 .yarn-integrity
 .env.local
+.env
 
 /public/packs
 /public/packs-test
