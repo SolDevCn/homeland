@@ -22,10 +22,13 @@
     <title><%= content_for?(:title) ? yield(:title) : Setting.app_name %></title>
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta content='True' name='HandheldFriendly'>
-    <link rel="alternate" type="application/rss+xml" title="Subscribe" href="<%= main_app.feed_topics_url %>">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
     <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#171717">
+
+    <link rel="alternate" type="application/rss+xml" title="Subscribe" href="<%= main_app.feed_topics_url %>">
     <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg" />
+
     <%= stylesheet_pack_tag "front", "data-turbolinks-track": "reload" %>
     <%= stylesheet_pack_tag "turbolinks-app", 'data-turbolinks-track': 'reload' if turbolinks_app? %>
     <%= yield :stylesheets %>
@@ -37,7 +40,7 @@
     <meta name="generator" content="Homeland <%= Homeland.version %>" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<%= @content_title || Setting.app_name %>">
-    <meta name="twitter:image" content="https://soldev.cn/favicon-full.png">
+    <meta name="twitter:image" content="https://soldev.cn/favicon-full.jpg">
 
     <% if @content_description %>
       <meta name="twitter:description" content="<%= @content_description %>">
@@ -49,7 +52,7 @@
     <!-- SolDev SEO -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="<%= @content_title || Setting.app_name %>">
-    <meta property="og:image" content="https://soldev.cn/favicon.png">
+    <meta property="og:image" content="https://soldev.cn/favicon-full.jpg">
     <% if @content_description %>
       <meta property="og:description" content="<%= @content_description %>">
     <% end %>
