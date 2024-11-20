@@ -71,7 +71,7 @@ GoBackup 支持通过 `s3` 存储后端配置将备份文件上传到 Cloudflare
 ### 5. **测试备份的文件是否可以正常导入**
 
 ```bash
-psql -h localhost -p 5432 -U postgres -d __DATABASE_NAME -f path_to_the_sql_file.sql
+psql -h localhost -p 5432 -U postgres -d __DATABASE_NAME__ -f path_to_the_sql_file.sql
 ```
 
 ### 小结
