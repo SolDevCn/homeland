@@ -15,7 +15,7 @@
 - [EXAMPLE](https://homeland.ruby-china.org/expo)
 - [RELEASE NOTES](https://github.com/ruby-china/homeland/releases)
 - [CONTRIBUTE GUIDE](https://github.com/ruby-china/homeland/blob/master/CONTRIBUTE.md)
-- [DATABASE BACKUP GUIDE](https://github.com/ruby-china/homeland/blob/master/backup.md)
+- [DATABASE BACKUP GUIDE](https://github.com/SolDevCn/homeland/blob/soldev/backup.md)
 
 ## License
 
