@@ -1,0 +1,23 @@
+models:
+  soldevcn:
+    schedule:
+      cron: "* * * * *"
+    databases:
+      postgresql:
+        type: "postgresql"
+        host: "localhost"
+        port: 5432
+        username: "__USERNAME__"
+        password: "__PASSWORD__"
+        database: "__DATABASE_NAME__"
+    compress_with:
+      type: tgz
+    storages:
+      store:
+        type: r2
+        bucket: "__BUCKET_NAME__"
+        path: "__PATH__"
+        account_id: "__ACCOUNT_ID__"
+        access_key_id: "__ACCESS_KEY_ID__"
+        secret_access_key: "__SECRET_ACCESS_KEY__"
+        endpoint: "__ENDPOINT__"
